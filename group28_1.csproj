@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A421081-AF34-41A8-A59A-B7E71FBCBEAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>group28_1</RootNamespace>
+    <AssemblyName>group28_1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_New_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_New_Customer.Designer.cs">
+      <DependentUpon>Add_New_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assignment.cs" />
+    <Compile Include="assignToEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assignToEvent.Designer.cs">
+      <DependentUpon>assignToEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseProductReportScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseProductReportScreen.Designer.cs">
+      <DependentUpon>ChooseProductReportScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design_event.cs" />
+    <Compile Include="employeeSetUp_Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeSetUp_Events.Designer.cs">
+      <DependentUpon>employeeSetUp_Events.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventDesignerScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventDesignerScreen.Designer.cs">
+      <DependentUpon>EventDesignerScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventSetUpEmployeeHomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventSetUpEmployeeHomeScreen.Designer.cs">
+      <DependentUpon>eventSetUpEmployeeHomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderedProduct.cs" />
+    <Compile Include="Product_Report_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product_Report_Screen.Designer.cs">
+      <DependentUpon>Product_Report_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Recipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipt.Designer.cs">
+      <DependentUpon>Recipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trace_on_financial_balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trace_on_financial_balance.Designer.cs">
+      <DependentUpon>Trace_on_financial_balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Design.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Design.Designer.cs">
+      <DependentUpon>Update_Design.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Product.Designer.cs">
+      <DependentUpon>Update_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCHIVE_CUSTOMERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCHIVE_CUSTOMERS.Designer.cs">
+      <DependentUpon>ARCHIVE_CUSTOMERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCHIVE_EMPLOYEES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCHIVE_EMPLOYEES.Designer.cs">
+      <DependentUpon>ARCHIVE_EMPLOYEES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCHIVE_SUPPLIERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCHIVE_SUPPLIERS.Designer.cs">
+      <DependentUpon>ARCHIVE_SUPPLIERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCHIVE_VEHICLES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCHIVE_VEHICLES.Designer.cs">
+      <DependentUpon>ARCHIVE_VEHICLES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bid.cs" />
+    <Compile Include="CEO_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEO_Screen.Designer.cs">
+      <DependentUpon>CEO_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewemployee.Designer.cs">
+      <DependentUpon>CreateNewemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Bid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Bid.Designer.cs">
+      <DependentUpon>Create_Bid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_New_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_New_Event.Designer.cs">
+      <DependentUpon>Create_New_Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Supplier.Designer.cs">
+      <DependentUpon>Create_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Vehicle.Designer.cs">
+      <DependentUpon>Create_Vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD_Customers.Designer.cs">
+      <DependentUpon>CRUD_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD_Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD_Employees.Designer.cs">
+      <DependentUpon>CRUD_Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD_Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD_Products.Designer.cs">
+      <DependentUpon>CRUD_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud_Supplier.Designer.cs">
+      <DependentUpon>Crud_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud_Vehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud_Vehicles.Designer.cs">
+      <DependentUpon>Crud_Vehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="customerType.cs" />
+    <Compile Include="Design.cs" />
+    <Compile Include="design_products.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="employeeType.cs" />
+    <Compile Include="Entry_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry_Screen.Designer.cs">
+      <DependentUpon>Entry_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs" />
+    <Compile Include="eventType.cs" />
+    <Compile Include="LogisticsManager_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogisticsManager_Screen.Designer.cs">
+      <DependentUpon>LogisticsManager_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="productStatus.cs" />
+    <Compile Include="productType.cs" />
+    <Compile Include="SAD_28DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAD_28DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs" />
+    <Compile Include="vehicleType.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL_CON.cs" />
+    <Compile Include="vehicle.cs" />
+    <Compile Include="View_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Customers.Designer.cs">
+      <DependentUpon>View_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Employees.Designer.cs">
+      <DependentUpon>View_Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Events.Designer.cs">
+      <DependentUpon>View_Events.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Products.Designer.cs">
+      <DependentUpon>View_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Supplier.Designer.cs">
+      <DependentUpon>View_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Vehicle.Designer.cs">
+      <DependentUpon>View_Vehicle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_New_Customer.resx">
+      <DependentUpon>Add_New_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assignToEvent.resx">
+      <DependentUpon>assignToEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseProductReportScreen.resx">
+      <DependentUpon>ChooseProductReportScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeSetUp_Events.resx">
+      <DependentUpon>employeeSetUp_Events.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventDesignerScreen.resx">
+      <DependentUpon>EventDesignerScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventSetUpEmployeeHomeScreen.resx">
+      <DependentUpon>eventSetUpEmployeeHomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product_Report_Screen.resx">
+      <DependentUpon>Product_Report_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipt.resx">
+      <DependentUpon>Recipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trace_on_financial_balance.resx">
+      <DependentUpon>Trace_on_financial_balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Design.resx">
+      <DependentUpon>Update_Design.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Product.resx">
+      <DependentUpon>Update_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCHIVE_CUSTOMERS.resx">
+      <DependentUpon>ARCHIVE_CUSTOMERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCHIVE_EMPLOYEES.resx">
+      <DependentUpon>ARCHIVE_EMPLOYEES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCHIVE_SUPPLIERS.resx">
+      <DependentUpon>ARCHIVE_SUPPLIERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCHIVE_VEHICLES.resx">
+      <DependentUpon>ARCHIVE_VEHICLES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEO_Screen.resx">
+      <DependentUpon>CEO_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateNewemployee.resx">
+      <DependentUpon>CreateNewemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Bid.resx">
+      <DependentUpon>Create_Bid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_New_Event.resx">
+      <DependentUpon>Create_New_Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Supplier.resx">
+      <DependentUpon>Create_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Vehicle.resx">
+      <DependentUpon>Create_Vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD_Customers.resx">
+      <DependentUpon>CRUD_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD_Employees.resx">
+      <DependentUpon>CRUD_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD_Products.resx">
+      <DependentUpon>CRUD_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud_Supplier.resx">
+      <DependentUpon>Crud_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud_Vehicles.resx">
+      <DependentUpon>Crud_Vehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry_Screen.resx">
+      <DependentUpon>Entry_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogisticsManager_Screen.resx">
+      <DependentUpon>LogisticsManager_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Customers.resx">
+      <DependentUpon>View_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Employees.resx">
+      <DependentUpon>View_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Events.resx">
+      <DependentUpon>View_Events.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Products.resx">
+      <DependentUpon>View_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Supplier.resx">
+      <DependentUpon>View_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Vehicle.resx">
+      <DependentUpon>View_Vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\Product.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SAD_28DataSet1.xsc">
+      <DependentUpon>SAD_28DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_28DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAD_28DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAD_28DataSet1.xss">
+      <DependentUpon>SAD_28DataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\בדיקקק.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מסך מנכל.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מנכל מעודכן.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מנכללללללל.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\144_largeגגג.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\גשדגדשגדש.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מסךמעצבת.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
