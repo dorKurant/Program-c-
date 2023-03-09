@@ -110,7 +110,7 @@ namespace group28_1
 
         private void Create_New_Event_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void calculateNumOfTablesInEvent_Click(object sender, EventArgs e)
